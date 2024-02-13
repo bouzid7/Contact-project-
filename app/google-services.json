@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177424671728",
+    "project_id": "contacts-898f1",
+    "storage_bucket": "contacts-898f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177424671728:android:88ecc6c91a2f3b2add3335",
+        "android_client_info": {
+          "package_name": "com.firstProject.contactsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177424671728-v05hv6u3hur60d34qnpo2o8talrs7g3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHxP_6-8QdxsGkFN4EqHx4SYiQ04Qqrb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177424671728-v05hv6u3hur60d34qnpo2o8talrs7g3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

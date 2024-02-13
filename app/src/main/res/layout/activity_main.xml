@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <!-- BEGIN/ response on success of authentication to listContacts-->
+
+    <!-- END/ response on success of authentication to listContacts -->
+
+    <!-- BEGIN/ layout of authentication (Log in) -->
+    <LinearLayout
+        android:id="@+id/layout_auth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginBottom="200dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Welcome"
+            android:textSize="30dp"
+            android:textColor="#6200EE"
+            android:textStyle="italic"
+            android:padding="20dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_auth"
+                android:layout_width="match_parent"
+                android:background="@drawable/search_view"
+                android:padding="18dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_auth"
+                android:layout_width="match_parent"
+                android:background="@drawable/search_view"
+                android:padding="18dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/bt_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sign in"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#6200EE"
+            />
+        <Button
+            android:id="@+id/btt_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:background="#6200EE"
+            />
+    </LinearLayout>
+
+    <!-- END/ layout of authentication (Log in) -->
+
+
+
+
+    <!-- BEGIN/ layout of registration (sign up) it's invisible(visibility=gone) -->
+    <LinearLayout
+        android:id="@+id/layout_acc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" New Account"
+            android:textSize="30dp"
+            android:textColor="#6200EE"
+            android:textStyle="italic"
+            android:padding="20dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname_acc"
+                android:background="@drawable/search_view"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname_acc"
+                android:background="@drawable/search_view"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="birth date "
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthdate_acc"
+                android:background="@drawable/search_view"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_acc"
+                android:background="@drawable/search_view"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_acc"
+                android:background="@drawable/search_view"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btt_singapp_acc"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:background="#6200EE"
+            />
+
+        <Button
+            android:id="@+id/btt_cancel_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_marginTop="10dp"
+            android:background="#B00020"
+            />
+
+    </LinearLayout>
+
+    <!-- END/ layout of registration (sign up) it's invisible(visibility=gone) -->
+
+</LinearLayout>

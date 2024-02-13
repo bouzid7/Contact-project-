@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:hint="@string/label"
+            android:textColorHint="#0026EE"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:text="entre your name"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/outlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outlined button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:background="#6200EE"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="100dp"
+            />
+        <TextView
+            android:id="@+id/service_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service du contact"
+            android:textSize="30dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+            <!-- item for our search view with its id -->
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>

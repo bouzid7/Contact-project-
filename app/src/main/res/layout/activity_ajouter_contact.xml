@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ajouter_contact">
+
+    <LinearLayout
+        android:id="@+id/layout_newContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="20dp"-->
+<!--            android:text=" New Contact"-->
+<!--            android:textColor="#8c92ac"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:shadowColor="#80000000"-->
+<!--            android:shadowDx="10"-->
+<!--            android:shadowDy="10"-->
+<!--            android:shadowRadius="10"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField1"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_view"
+            android:hint="enter firtsname"
+            android:textColorHint="#6200EE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname_newContact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="#6200EE"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField2"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:hint="enter lastname"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            android:textColorHint="#6200EE"
+            android:background="@drawable/search_view"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname_newContact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="#6200EE"
+                android:textSize="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField3"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_view"
+            android:hint=" enter phone number"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            android:textColorHint="#6200EE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumber_newContact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="#6200EE"
+                android:textSize="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField4"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_view"
+            android:hint=" enter email"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            android:textColorHint="#6200EE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_newContact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="#6200EE"
+                android:textSize="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField5"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_view"
+            android:hint="enter service"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            android:textColorHint="#6200EE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/service_newContact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="#6200EE"
+                android:textSize="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+
+                android:id="@+id/add_newContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="add"
+                android:background="@drawable/search_view"
+                android:layout_marginLeft="100dp"
+                android:backgroundTint="#00E676"
+                />
+            <Button
+                android:id="@+id/cancel_newContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:background="@drawable/search_view"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#E53935"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
